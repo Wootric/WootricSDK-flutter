@@ -3,6 +3,9 @@ description: This is an official Wootric SDK Wrapper for Flutter. To use this pl
 version: 0.0.1
 homepage: https://inmoment.com/wootric/
 repository: https://github.com/Wootric/WootricSDK-flutter/
+issue_tracker: https://github.com/Wootric/WootricSDK-flutter/issues
+documentation: https://github.com/Wootric/WootricSDK-flutter#readme
+
 environment:
   sdk: ">=2.17.6 <3.0.0"
   flutter: ">=2.5.0"
