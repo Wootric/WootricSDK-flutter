@@ -1,4 +1,3 @@
-
 import 'wootricsdk_flutter_platform_interface.dart';
 
 class WootricsdkFlutter {
@@ -7,7 +6,8 @@ class WootricsdkFlutter {
   }
 
   static configure({required String clientId, required String accountToken}) {
-    WootricsdkFlutterPlatform.instance.configure(clientId: clientId, accountToken: accountToken);
+    WootricsdkFlutterPlatform.instance
+        .configure(clientId: clientId, accountToken: accountToken);
   }
 
   /// While [endUserEmail] is not required it is HIGHLY recommended to set it if possible.
@@ -63,13 +63,15 @@ class WootricsdkFlutter {
   /// If you enable this setting, score and feedback text will be added as wootric_score and wootric_text params
   /// to the “thank you” URL you have provided.
   static passScoreAndTextToURL(bool passScoreAndTextToURL) {
-    WootricsdkFlutterPlatform.instance.passScoreAndTextToURL(passScoreAndTextToURL);
+    WootricsdkFlutterPlatform.instance
+        .passScoreAndTextToURL(passScoreAndTextToURL);
   }
 
   /// With this option enabled, promoters (score 9-10) will be taken directly to third (social share) screen,
   /// skipping the second (feedback) one.
   static skipFeedbackScreenForPromoter(bool skipFeedbackScreenForPromoter) {
-    WootricsdkFlutterPlatform.instance.skipFeedbackScreenForPromoter(skipFeedbackScreenForPromoter);
+    WootricsdkFlutterPlatform.instance
+        .skipFeedbackScreenForPromoter(skipFeedbackScreenForPromoter);
   }
 
   /// If [showOptOut] is set to true, it will show an option for the end user
@@ -104,6 +106,4 @@ class WootricsdkFlutter {
   static showSurvey() {
     WootricsdkFlutterPlatform.instance.showSurvey();
   }
-
 }
-

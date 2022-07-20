@@ -11,7 +11,8 @@ class MethodChannelWootricsdkFlutter extends WootricsdkFlutterPlatform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version =
+        await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
 
@@ -26,12 +27,14 @@ class MethodChannelWootricsdkFlutter extends WootricsdkFlutterPlatform {
   /// While [endUserEmail] is not required it is HIGHLY recommended to set it if possible.
   @override
   setEndUserEmail(String endUserEmail) {
-    methodChannel.invokeMethod('setEndUserEmail', {'endUserEmail': endUserEmail});
+    methodChannel
+        .invokeMethod('setEndUserEmail', {'endUserEmail': endUserEmail});
   }
 
   @override
   setEndUserExternalId(String endUserExternalId) {
-    methodChannel.invokeMethod('setEndUserExternalId', {'endUserExternalId': endUserExternalId});
+    methodChannel.invokeMethod(
+        'setEndUserExternalId', {'endUserExternalId': endUserExternalId});
   }
 
   /// [endUserProperties] can be provided as an Map<String, String> object.
