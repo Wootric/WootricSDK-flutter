@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - WootricSDK (0.21.1)
+  - wootricsdk_flutter (0.0.1):
+    - Flutter
+    - WootricSDK (= 0.21.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - wootricsdk_flutter (from `.symlinks/plugins/wootricsdk_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - WootricSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  wootricsdk_flutter:
+    :path: ".symlinks/plugins/wootricsdk_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  WootricSDK: 04807a7fe1dc7bc1ce3b68d4bad7c62e04e1fe83
+  wootricsdk_flutter: 802b4006794b68c52ba5a0a464eb89415bb78e95
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.2
