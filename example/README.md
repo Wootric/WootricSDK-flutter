@@ -1,4 +1,4 @@
-# wootricsdk_flutter_example
+# wootricsdk flutter example
 
 Demonstrates how to use the wootricsdk_flutter plugin.
 

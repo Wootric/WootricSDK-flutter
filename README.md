@@ -1,6 +1,6 @@
 # Flutter Plugin for Wootric SDK
 
-A Wootric SDK Wrapper for Flutter.
+This is an official Wootric SDK Wrapper for Flutter by InMoment.
 
 [Website](https://inmoment.com/wootric/)
 
