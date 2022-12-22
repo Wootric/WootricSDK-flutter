@@ -154,4 +154,11 @@ class MethodChannelWootricsdkFlutter extends WootricsdkFlutterPlatform {
   showSurvey() {
     methodChannel.invokeMethod('showWootricSurvey');
   }
+
+  @override
+  showSurveyWithEvent(String eventName) {
+    methodChannel.invokeMethod('showWootricSurveyWithEvent', {
+      'eventName': eventName
+    });
+  }
 }

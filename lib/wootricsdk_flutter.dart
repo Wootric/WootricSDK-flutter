@@ -106,4 +106,9 @@ class WootricsdkFlutter {
   static showSurvey() {
     WootricsdkFlutterPlatform.instance.showSurvey();
   }
+
+  /// Display Wootric survey driven by configured settings and event name.
+  static showSurveyWithEvent(String eventName) {
+    WootricsdkFlutterPlatform.instance.showSurveyWithEvent(eventName);
+  }
 }

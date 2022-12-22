@@ -81,6 +81,9 @@ class WootricsdkFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       wootric?.setLanguageCode(languageCode)
     } else if (call.method.equals("showWootricSurvey")) {
       wootric?.survey()
+    } else if (call.method.equals("showWootricSurveyWithEvent")) {
+      val eventName: String? = call.argument("eventName")
+      wootric?.survey(eventName)
     } else {
       result.notImplemented()
     }

@@ -108,6 +108,15 @@ public class SwiftWootricsdkFlutterPlugin: NSObject, FlutterPlugin {
                     Wootric.showSurvey(in: viewController)
                 }
 
+            case "showWootricSurveyWithEvent":
+                if let window = UIApplication.shared.delegate?.window {
+                    if let arguments = call.arguments as? [String: Any] {
+                        let eventName = arguments["eventName"] as? String
+                        let viewController = window?.rootViewController
+                        Wootric.showSurvey(in: viewController, event: eventName)
+                    }
+                }
+
             default:
                 result(FlutterMethodNotImplemented)
             }

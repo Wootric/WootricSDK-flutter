@@ -1,6 +1,6 @@
 name: wootricsdk_flutter
 description: This is an official Wootric SDK Wrapper for Flutter. To use this plugin you need minimum a free Wootric Account with valid ClientId and AccountToken. You can visit wootric website for more details. Here is the official documentation for wootric - http://docs.wootric.com/
-version: 0.0.2
+version: 0.1.0
 homepage: https://inmoment.com/wootric/
 repository: https://github.com/Wootric/WootricSDK-flutter/
 issue_tracker: https://github.com/Wootric/WootricSDK-flutter/issues
