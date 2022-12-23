@@ -122,4 +122,9 @@ abstract class WootricsdkFlutterPlatform extends PlatformInterface {
 
   }
 
+  /// Display Wootric survey driven by configured settings and event name.
+  showSurveyWithEvent(String eventName) {
+
+  }
+
 }
