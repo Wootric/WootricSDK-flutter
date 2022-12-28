@@ -117,6 +117,31 @@ abstract class WootricsdkFlutterPlatform extends PlatformInterface {
   setLanguageCode(String languageCode) {
 
   }
+
+  /// Wootric allows you to set a custom color for the survey slider.
+  /// To set a custom color pass appropriate [color] in hex format.
+  setSliderColor(String color) {
+
+  }
+
+  /// Wootric allows you to set a custom color for the Send button.
+  /// To set a custom color pass appropriate [color] in hex format.
+  setSendButtonBackgroundColor(String color) {
+
+  }
+
+  /// Wootric allows you to set a custom color for the Thank You button.
+  /// To set a custom color pass appropriate [color] in hex format.
+  setThankYouButtonBackgroundColor(String color) {
+
+  }
+
+  /// Wootric allows you to set a custom color for social sharing buttons.
+  /// To set a custom color pass appropriate [color] in hex format.
+  setSocialSharingColor(String color) {
+
+  }
+
   /// Display Wootric survey driven by configured settings.
   showSurvey() {
 

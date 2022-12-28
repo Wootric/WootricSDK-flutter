@@ -1,6 +1,7 @@
 package com.inmoment.wootricsdk_flutter
 
 import android.app.Activity
+import android.graphics.Color
 import androidx.annotation.NonNull
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -79,6 +80,22 @@ class WootricsdkFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     } else if (call.method.equals("setLanguageCode")) {
       val languageCode: String? = call.argument("languageCode")
       wootric?.setLanguageCode(languageCode)
+    } else if (call.method.equals("setSliderColor")) {
+      val hexColor: String? = call.argument("color")
+      val color: Int = Color.parseColor(hexColor)
+      wootric?.setScoreColor(color)
+    } else if (call.method.equals("setSendButtonBackgroundColor")) {
+      val hexColor: String? = call.argument("color")
+      val color: Int = Color.parseColor(hexColor)
+      wootric?.setSurveyColor(color)
+    } else if (call.method.equals("setThankYouButtonBackgroundColor")) {
+      val hexColor: String? = call.argument("color")
+      val color: Int = Color.parseColor(hexColor)
+      wootric?.setThankYouButtonBackgroundColor(color)
+    } else if (call.method.equals("setSocialSharingColor")) {
+      val hexColor: String? = call.argument("color")
+      val color: Int = Color.parseColor(hexColor)
+      wootric?.setSocialSharingColor(color)
     } else if (call.method.equals("showWootricSurvey")) {
       wootric?.survey()
     } else if (call.method.equals("showWootricSurveyWithEvent")) {
