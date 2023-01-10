@@ -28,12 +28,10 @@ abstract class WootricsdkFlutterPlatform extends PlatformInterface {
   }
 
   configure({required String clientId, required String accountToken}) {
-    throw UnimplementedError('configure() has not been implemented.');
   }
 
   /// While [endUserEmail] is not required it is HIGHLY recommended to set it if possible.
   setEndUserEmail(String endUserEmail) {
-    throw UnimplementedError('setEndUserEmail() has not been implemented.');
   }
 
   /// Set an [endUserExternalId] for the end user. This value is optional.

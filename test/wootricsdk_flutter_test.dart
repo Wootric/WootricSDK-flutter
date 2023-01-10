@@ -93,6 +93,31 @@ class MockWootricsdkFlutterPlatform
   surveyImmediately(bool surveyImmediately) {
 
   }
+
+  @override
+  setSendButtonBackgroundColor(String color) {
+
+  }
+
+  @override
+  setSliderColor(String color) {
+
+  }
+
+  @override
+  setSocialSharingColor(String color) {
+
+  }
+
+  @override
+  setThankYouButtonBackgroundColor(String color) {
+
+  }
+
+  @override
+  showSurveyWithEvent(String eventName) {
+
+  }
 }
 
 void main() {

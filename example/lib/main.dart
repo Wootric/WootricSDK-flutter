@@ -58,10 +58,15 @@ class _MyAppState extends State<MyApp> {
           child: ElevatedButton(
             child: Text('Present Survey'),
             onPressed: () {
-              WootricsdkFlutter.configure(clientId: '<ClinetId>', accountToken: '<AccountToken>');
+              //WootricsdkFlutter.configure(clientId: '<ClinetId>', accountToken: '<AccountToken>');
+              WootricsdkFlutter.configure(clientId: 'cd14f8ccab1f887882d1039780e125afa3f356df7d9cc3e58b70f85259fc6f8c', accountToken: 'NPS-71899b45');
               WootricsdkFlutter.setEndUserEmail('abc@test.com');
               WootricsdkFlutter.forceSurvey(true); // For debug
               WootricsdkFlutter.setEndUserPropteries({'App': 'WootricPlugin'});
+              WootricsdkFlutter.setSliderColor("#FF0000");
+              WootricsdkFlutter.setSendButtonBackgroundColor("#FF0000");
+              WootricsdkFlutter.setThankYouButtonBackgroundColor("#FF0000");
+              WootricsdkFlutter.setSocialSharingColor("#FF0000");
               WootricsdkFlutter.showSurvey();
               WootricsdkFlutter.setLogLevelVerbose();
             },
