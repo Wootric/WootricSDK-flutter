@@ -150,6 +150,42 @@ class MethodChannelWootricsdkFlutter extends WootricsdkFlutterPlatform {
     });
   }
 
+  /// Wootric allows you to set a custom color for the survey slider.
+  /// To set a custom color pass appropriate [color] in hex format.
+  @override
+  setSliderColor(String color) {
+    methodChannel.invokeMethod('setSliderColor', {
+      'color': color,
+    });
+  }
+
+  /// Wootric allows you to set a custom color for the Send button.
+  /// To set a custom color pass appropriate [color] in hex format.
+  @override
+  setSendButtonBackgroundColor(String color) {
+    methodChannel.invokeMethod('setSendButtonBackgroundColor', {
+      'color': color,
+    });
+  }
+
+  /// Wootric allows you to set a custom color for the Thank You button.
+  /// To set a custom color pass appropriate [color] in hex format.
+  @override
+  setThankYouButtonBackgroundColor(String color) {
+    methodChannel.invokeMethod('setThankYouButtonBackgroundColor', {
+      'color': color,
+    });
+  }
+
+  /// Wootric allows you to set a custom color for social sharing buttons.
+  /// To set a custom color pass appropriate [color] in hex format.
+  @override
+  setSocialSharingColor(String color) {
+    methodChannel.invokeMethod('setSocialSharingColor', {
+      'color': color,
+    });
+  }
+
   @override
   showSurvey() {
     methodChannel.invokeMethod('showWootricSurvey');
