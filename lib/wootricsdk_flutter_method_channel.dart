@@ -193,8 +193,7 @@ class MethodChannelWootricsdkFlutter extends WootricsdkFlutterPlatform {
 
   @override
   showSurveyWithEvent(String eventName) {
-    methodChannel.invokeMethod('showWootricSurveyWithEvent', {
-      'eventName': eventName
-    });
+    methodChannel
+        .invokeMethod('showWootricSurveyWithEvent', {'eventName': eventName});
   }
 }

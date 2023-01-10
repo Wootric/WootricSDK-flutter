@@ -1,3 +1,9 @@
+## [0.0.4] - 2023-01-10
+
+* Added showSurveyWithEvent method
+* Added color customization methods
+* Fixed warnings.
+
 ## [0.0.3] - 2023-01-10
 
 * Added showSurveyWithEvent method

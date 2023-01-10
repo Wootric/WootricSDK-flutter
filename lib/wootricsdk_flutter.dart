@@ -102,29 +102,29 @@ class WootricsdkFlutter {
     WootricsdkFlutterPlatform.instance.setLanguageCode(languageCode);
   }
 
-	/// Wootric allows you to set a custom color for the survey slider.
-	/// To set a custom color pass appropriate [color] in hex format.
-	static setSliderColor(String color) {
-	  WootricsdkFlutterPlatform.instance.setSliderColor(color);
-	}
+  /// Wootric allows you to set a custom color for the survey slider.
+  /// To set a custom color pass appropriate [color] in hex format.
+  static setSliderColor(String color) {
+    WootricsdkFlutterPlatform.instance.setSliderColor(color);
+  }
 
-	/// Wootric allows you to set a custom color for the Send button.
-	/// To set a custom color pass appropriate [color] in hex format.
-	static setSendButtonBackgroundColor(String color) {
-	  WootricsdkFlutterPlatform.instance.setSendButtonBackgroundColor(color);
-	}
+  /// Wootric allows you to set a custom color for the Send button.
+  /// To set a custom color pass appropriate [color] in hex format.
+  static setSendButtonBackgroundColor(String color) {
+    WootricsdkFlutterPlatform.instance.setSendButtonBackgroundColor(color);
+  }
 
-	/// Wootric allows you to set a custom color for the Thank You button.
-	/// To set a custom color pass appropriate [color] in hex format.
-	static setThankYouButtonBackgroundColor(String color) {
-	  WootricsdkFlutterPlatform.instance.setThankYouButtonBackgroundColor(color);
-	}
+  /// Wootric allows you to set a custom color for the Thank You button.
+  /// To set a custom color pass appropriate [color] in hex format.
+  static setThankYouButtonBackgroundColor(String color) {
+    WootricsdkFlutterPlatform.instance.setThankYouButtonBackgroundColor(color);
+  }
 
-	/// Wootric allows you to set a custom color for social sharing buttons.
-	/// To set a custom color pass appropriate [color] in hex format.
-	static setSocialSharingColor(String color) {
-	  WootricsdkFlutterPlatform.instance.setSocialSharingColor(color);
-	}
+  /// Wootric allows you to set a custom color for social sharing buttons.
+  /// To set a custom color pass appropriate [color] in hex format.
+  static setSocialSharingColor(String color) {
+    WootricsdkFlutterPlatform.instance.setSocialSharingColor(color);
+  }
 
   /// Display Wootric survey driven by configured settings.
   static showSurvey() {
