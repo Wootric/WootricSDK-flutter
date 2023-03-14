@@ -1,3 +1,8 @@
+## [0.0.5] - 2023-03-14
+
+* Add support custom first question
+* Fixed bugs 2nd & 3rd acreen bugs on Android
+
 ## [0.0.4] - 2023-01-10
 
 * Added showSurveyWithEvent method
