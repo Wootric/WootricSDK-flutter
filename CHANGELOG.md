@@ -1,3 +1,8 @@
+## [0.0.6] - 2023-05-12
+
+* Fix setSliderColor bug for Android
+* Fix method typo
+
 ## [0.0.5] - 2023-03-14
 
 * Add support custom first question

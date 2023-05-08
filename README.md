@@ -22,7 +22,7 @@ WootricsdkFlutter.configure(
 ```
  WootricsdkFlutter.setEndUserEmail('test@example.com');
  WootricsdkFlutter.setEndUserExternalId('123456789');
- WootricsdkFlutter.setEndUserPropteries({
+ WootricsdkFlutter.setEndUserProperties({
     'App': 'My App'
  });
 ```

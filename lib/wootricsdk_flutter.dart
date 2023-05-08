@@ -21,8 +21,14 @@ class WootricsdkFlutter {
   }
 
   /// [endUserProperties] can be provided as an Map<String, String> object.
+  static setEndUserProperties(Map<String, String> endUserProperties) {
+    WootricsdkFlutterPlatform.instance.setEndUserProperties(endUserProperties);
+  }
+
+  /// [endUserProperties] can be provided as an Map<String, String> object.
+  /// DEPRECATED
   static setEndUserPropteries(Map<String, String> endUserProperties) {
-    WootricsdkFlutterPlatform.instance.setEndUserPropteries(endUserProperties);
+    WootricsdkFlutterPlatform.instance.setEndUserProperties(endUserProperties);
   }
 
   /// If [forceSurvey] is set to true, the survey is displayed

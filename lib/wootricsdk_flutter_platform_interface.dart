@@ -36,7 +36,7 @@ abstract class WootricsdkFlutterPlatform extends PlatformInterface {
   setEndUserExternalId(String endUserExternalId) {}
 
   /// [endUserProperties] can be provided as an Map<String, String> object.
-  setEndUserPropteries(Map<String, String> endUserProperties) {}
+  setEndUserProperties(Map<String, String> endUserProperties) {}
 
   /// If [forceSurvey] is set to true, the survey is displayed
   /// skipping eligibility check AND even if user was already surveyed.

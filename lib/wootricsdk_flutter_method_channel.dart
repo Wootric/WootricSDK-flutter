@@ -39,7 +39,7 @@ class MethodChannelWootricsdkFlutter extends WootricsdkFlutterPlatform {
 
   /// [endUserProperties] can be provided as an Map<String, String> object.
   @override
-  setEndUserPropteries(Map<String, String> endUserProperties) {
+  setEndUserProperties(Map<String, String> endUserProperties) {
     methodChannel.invokeMethod('setEndUserProperties', {
       'endUserProperties': endUserProperties,
     });
