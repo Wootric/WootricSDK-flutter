@@ -1,3 +1,7 @@
+## [0.0.7] - 2023-07-12
+
+* Fix setSliderColor bug for Android in tablets (https://github.com/Wootric/WootricSDK-flutter/issues/8)
+
 ## [0.0.6] - 2023-05-12
 
 * Fix setSliderColor bug for Android
