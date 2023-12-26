@@ -134,6 +134,15 @@ public class SwiftWootricsdkFlutterPlugin: NSObject, FlutterPlugin {
                     }
                 }
 
+            case "showDisclaimer":
+                if let arguments = call.arguments as? [String: Any] {
+                    let disclaimerText = arguments["disclaimerText"] as? String
+                    let disclaimerLink = arguments["disclaimerLinkURL"] as? String
+                    let disclaimerLinkText = arguments["disclaimerLinkText"] as? String
+                    let disclaimerLinkURL = URL(string: disclaimerLink!)
+                    Wootric.showDisclaimerText(disclaimerText, link: disclaimerLinkURL, linkText: disclaimerLinkText)
+                }
+
             case "showWootricSurvey":
                 if let window = UIApplication.shared.delegate?.window {
                     let viewController = window?.rootViewController

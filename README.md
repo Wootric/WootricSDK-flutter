@@ -58,3 +58,11 @@ WootricsdkFlutter.setLogLevelVerbose();
 WootricsdkFlutter.setLogLevelError();
 WootricsdkFlutter.setLogLevelNone();
 ```
+
+## showDisclaimer
+
+When `disclaimerText, link and linkText` are set, the survey will display the text and link at the bottom of the survey.
+
+```
+WootricsdkFlutter.showDisclaimer("Learn how we handle your feedback","https://example.com/terms-of-use","here");
+```

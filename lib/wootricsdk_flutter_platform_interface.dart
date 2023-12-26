@@ -105,6 +105,10 @@ abstract class WootricsdkFlutterPlatform extends PlatformInterface {
   /// To set a custom color pass appropriate [color] in hex format.
   setSocialSharingColor(String color) {}
 
+  /// Wootric allows you to set a disclaimer text with a link
+  /// To set a disclaimer text pass disclaimerText, a disclaimerLinkURL and a disclaimerLinkText
+  showDisclaimer(String disclaimerText, String disclaimerLinkURL, String disclaimerLinkText) {}
+
   /// Display Wootric survey driven by configured settings.
   showSurvey() {}
 

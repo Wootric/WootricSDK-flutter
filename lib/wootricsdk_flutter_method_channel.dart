@@ -186,6 +186,17 @@ class MethodChannelWootricsdkFlutter extends WootricsdkFlutterPlatform {
     });
   }
 
+  /// Wootric allows you to set a disclaimer text with a link
+  /// To set a disclaimer text pass disclaimerText, a disclaimerLinkURL and a disclaimerLinkText
+  @override
+  showDisclaimer(String disclaimerText, String disclaimerLinkURL, String disclaimerLinkText) {
+    methodChannel.invokeMethod('showDisclaimer', {
+      'disclaimerText': disclaimerText,
+      'disclaimerLinkURL': disclaimerLinkURL,
+      'disclaimerLinkText': disclaimerLinkText
+    });
+  }
+
   @override
   showSurvey() {
     methodChannel.invokeMethod('showWootricSurvey');

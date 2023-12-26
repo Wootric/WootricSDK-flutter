@@ -3,6 +3,7 @@ package com.inmoment.wootricsdk_flutter
 import android.app.Activity
 import android.graphics.Color
 import androidx.annotation.NonNull
+import android.net.Uri;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -101,6 +102,12 @@ class WootricsdkFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     } else if (call.method.equals("showWootricSurveyWithEvent")) {
       val eventName: String? = call.argument("eventName")
       wootric?.survey(eventName)
+    } else if (call.method.equals("showDisclaimer")) {
+      val disclaimerText: String? = call.argument("disclaimerText")
+      val disclaimerLink: String? = call.argument("disclaimerLinkURL")
+      val disclaimerLinkText: String? = call.argument("disclaimerLinkText")
+      val disclaimerLinkURI = Uri.parse(disclaimerLink)
+      wootric?.showDisclaimer(disclaimerText, disclaimerLinkURI, disclaimerLinkText)
     } else {
       result.notImplemented()
     }

@@ -1,3 +1,7 @@
+## [0.0.8] - 2024-03-20
+
+* Add support for disclaimer method
+
 ## [0.0.7] - 2023-07-12
 
 * Fix setSliderColor bug for Android in tablets (https://github.com/Wootric/WootricSDK-flutter/issues/8)

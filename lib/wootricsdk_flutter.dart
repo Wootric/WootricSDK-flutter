@@ -132,6 +132,12 @@ class WootricsdkFlutter {
     WootricsdkFlutterPlatform.instance.setSocialSharingColor(color);
   }
 
+  /// Wootric allows you to set a disclaimer text with a link
+  /// To set a disclaimer text pass disclaimerText, a disclaimerLinkURL and a disclaimerLinkText
+  static showDisclaimer(String disclaimerText, String disclaimerLinkURL, String disclaimerLinkText) {
+    WootricsdkFlutterPlatform.instance.showDisclaimer(disclaimerText, disclaimerLinkURL, disclaimerLinkText);
+  }
+
   /// Display Wootric survey driven by configured settings.
   static showSurvey() {
     WootricsdkFlutterPlatform.instance.showSurvey();
