@@ -1,3 +1,7 @@
+## [0.0.9] - 2024-06-04
+
+* Fix `Int` to `Long` cast in Android `setEndUserCreatedAt`
+
 ## [0.0.8] - 2024-03-20
 
 * Add support for disclaimer method

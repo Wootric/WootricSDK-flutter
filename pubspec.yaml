@@ -1,6 +1,6 @@
 name: wootricsdk_flutter
 description: This is an official Wootric SDK Wrapper for Flutter. You can visit wootric website for more details. Here is the official documentation for wootric - http://docs.wootric.com/
-version: 0.0.8
+version: 0.0.9
 homepage: https://inmoment.com/wootric/
 repository: https://github.com/Wootric/WootricSDK-flutter/
 issue_tracker: https://github.com/Wootric/WootricSDK-flutter/issues
@@ -21,7 +21,6 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
-
   plugin:
     platforms:
       android:
