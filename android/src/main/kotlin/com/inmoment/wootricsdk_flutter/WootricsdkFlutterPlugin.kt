@@ -54,9 +54,9 @@ class WootricsdkFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       val value = forceSurvey ?: false
       wootric?.setSurveyImmediately(value)
     } else if (call.method.equals("setEndUserCreatedAt")) {
-      val endUserCreatedAt: Long? = call.argument("endUserCreatedAt")
+      val endUserCreatedAt: Int? = call.argument("endUserCreatedAt")
       if (endUserCreatedAt != null) {
-        wootric?.setEndUserCreatedAt(endUserCreatedAt)
+        wootric?.setEndUserCreatedAt(endUserCreatedAt.toLong())
       }
     } else if (call.method.equals("setFirstSurveyAfter")) {
       val numberOfDays: Int? = call.argument("numberOfDays")
